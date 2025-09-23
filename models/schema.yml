@@ -4,13 +4,12 @@ version: 2
 sources:
   - name: minalp
     database: dl_captura
+    schema: minalp
     tables:
-      - name: _airbyte_raw_v_facturacion
-        description: "Tabla original de facturación importada por Airbyte"
+      - name: v_facturacion
+        description: "Tabla normalizada de facturación creada por Airbyte"
 
 models:
   - name: v_facturacion_gec3
     description: "Datos de facturación GEC3 renombrados para evitar conflictos"
-    columns:
-      - name: "*"
-        description: "Todos los campos de la tabla original"
+
