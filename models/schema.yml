@@ -5,7 +5,7 @@ sources:
   - name: minalp
     database: dl_captura
     tables:
-      - name: _airbyte_raw_v_mina
+      - name: _airbyte_raw_v_facturacion
         description: "Tabla original de facturación importada por Airbyte"
 
 models:

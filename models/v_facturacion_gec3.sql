@@ -5,6 +5,4 @@
     materialized='table'
 ) }}
 
--- Selecciona todos los datos de la tabla original v_Facturacion
--- y los renombra como v_facturacion_gec3
-SELECT * FROM {{ source('minalp', '_airbyte_raw_v_facturacion') }}
+SELECT * FROM {{ ref('v_facturacion') }}  -- Referencia a la tabla normalizada
