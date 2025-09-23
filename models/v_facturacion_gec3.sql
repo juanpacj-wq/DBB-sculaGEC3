@@ -2,7 +2,7 @@
 -- models/v_facturacion_gec3.sql
 {{ config(
     alias='v_facturacion_gec3',
-    schema='minalp',
+    schema=none,
     materialized='table'
 ) }}
 
