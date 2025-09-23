@@ -6,5 +6,4 @@
     materialized='table'
 ) }}
 
--- Selecciona todos los datos de la tabla normalizada v_facturacion
 SELECT * FROM {{ source('minalp', 'v_facturacion') }}

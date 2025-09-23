@@ -1,4 +1,5 @@
 # dbt_project.yml
+
 name: 'airbyte_dbt'
 version: '1.0.0'
 config-version: 2
@@ -20,4 +21,4 @@ clean-targets:
 models:
   airbyte_dbt:
     +materialized: table
-    +schema: minalp
+    # REMOVIDO: +schema: minalp
